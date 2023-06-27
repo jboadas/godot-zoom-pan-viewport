@@ -28,5 +28,3 @@ render_target_update_mode = 4
 rotation = 1.5708
 
 [node name="Sprite2D2" parent="Node2D/SubViewportContainer/SubViewport" instance=ExtResource("3_xuwbc")]
-
-[node name="Node2D" type="Node2D" parent="Node2D/SubViewportContainer/SubViewport"]
