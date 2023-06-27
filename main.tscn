@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://mdyuuhu8c2qa"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_rv3rt"]
+[ext_resource type="Texture2D" uid="uid://56i7yyxlpgia" path="res://art/main_screen.png" id="1_taebq"]
+[ext_resource type="PackedScene" uid="uid://dpgnqod45l3lh" path="res://sprite_2d.tscn" id="3_xuwbc"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_rv3rt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(399, 301)
+texture = ExtResource("1_taebq")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(380, 89)
+scale = Vector2(0.667244, 0.823549)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="Node2D/SubViewportContainer"]
+disable_3d = true
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/SubViewportContainer/SubViewport"]
+rotation = 1.5708
+
+[node name="Sprite2D2" parent="Node2D/SubViewportContainer/SubViewport" instance=ExtResource("3_xuwbc")]
+
+[node name="Node2D" type="Node2D" parent="Node2D/SubViewportContainer/SubViewport"]

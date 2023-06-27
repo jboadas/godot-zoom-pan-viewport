@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpgnqod45l3lh"]
+
+[ext_resource type="Texture2D" uid="uid://c7g1hjid63pkl" path="res://art/viewport.jpg" id="1_yus3w"]
+
+[node name="Sprite2D" type="Sprite2D"]
+
+[node name="imagen" type="Sprite2D" parent="."]
+texture = ExtResource("1_yus3w")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(0.5, 0.5)
+scale = Vector2(0.99974, 0.999388)
+points = PackedVector2Array(-1921, -817, -1921, 815.999, 1920, 816, 1920, -817, -1921, -817)
+width = 1.0
+default_color = Color(0.364706, 0.894118, 0.392157, 1)
